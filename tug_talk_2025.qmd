@@ -1,0 +1,781 @@
+---
+title: "[TEST SCREEN]"
+slide-number: true
+author: ""
+format: revealjs
+editor: visual
+---
+
+## How Building a MicroSaaS in R Might Make You a Better Data Scientist
+
+<section style="text-align: right; margin: 100px 0 0 0">
+
+David John Baker, PhD
+
+Redgranite Group
+
+Tableau User Group Meeting, March 2025
+
+</section>
+
+# Upskilling as a Data Scientist 
+
+::: {.notes}
+- Hello everyone, my name is Dave
+- Thank you for having me here, esp to organizers for putting this together
+- Excited to connect with data community here in New England
+- Last year I moved to New England last year from Old England
+- And I'm looking forward to talking about R at this Tableau group 
+- I have tried to keep the R evangelizing to a minimum
+- Bc really the high level point I want to make in this talk is:
+:::
+
+# Solving real world problems, not finishing assigned projects is what makes you a better data scientist
+
+::: {.notes}
+- And R and many of the tools I will show you over the next 30 minutes are a great way to help you quickly solve real world problems
+- Saying it out loud sounds a bit like a platitude, but hopefully by the end of the talk, you'll see what I mean
+- I wrote this talk specifically with students and more junior colleagues in mind
+- Always hope to write the talk I wish I could have heard when I was younger
+:::
+
+## Why on mind? 
+
+![](vid/dsw.png)
+
+::: {.notes}
+- last client was end point assessing org in UK
+- acted as independent assessor for masters students finishing data science projects
+- saw maybe 40 projects people did to improve, got me thinking about the lull between employment 
+- thinking of what to do
+::: 
+
+## Why upskill?
+
+::: {.incremental}
+- Technology landscape is always changing
+- Double Edged Sword
+  + Intellectually stimulating 
+  + Anxiety inducing, especially if you're more junior
+- Juniors: need to differentiate yourself 
+  + LLMs
+  + Mass Layoffs
+- **Make your own life easier, more hireable, more value to colleagues and organization** 
+:::
+
+::: {.notes}
+- If you work in data, it's nearly impossible to NOT be constantly learning new things
+- CLICK Landscape of technology is always changing
+- Each week my LinkedIn feed is I feel inundated with new tech stacks, the latest models, frameworks
+- CLICK This is of course a double edged sword though
+- CLICK Can be fun if you are securely positioned, have someone to guide you, can be very intellectually stimulating and reason we got into data
+- Flip side is this can be anxiety inducing if you're more junior, but I feel it as well
+- Particular pressure for junior data scientists apparent now and even
+- Six years ago, when hiring market was on fire, students I had still worried about how to differentiate themselves
+- CLICK
+- Add in existence of LLMs, mass governmental layoffs, and a poor job market, it sucks
+- Probably don't need to make specific argument, but always good to be explicit
+:::
+
+## Not enough just to tell, must show
+
+::: {.incremental}
+- Showing with **Projects** proof
+  + Externally motivated (a.k.a. boss tells you what to do)
+  + Data already exists  (a.k.a pre-packaged data)
+  + Tools > Everything Else 
+  + "Solution in search of a problem"
+- Nothing wrong with this, siloed for a reason  
+- _Alternative approach if you want to really improve your skillset_
+:::
+
+::: {.notes}
+- Whether trying to get a job, or continue in current career, unfortunately can't just read a book then say you did that
+- Often need to have evidence showing your skills and improvements
+- CLICK
+- Sometimes do this with what might be called the **Projects** approach
+  + Externally mandated (e.g. boss, teacher tells you what to do)
+  + Externally sourced (e.g. pre-packaged data)
+  + Tools > Everything Else 
+  + "Solution in search of a problem"
+- Traditional approach, siloed for a reason
+- Going to provide alt framework other than what I'll refer to as project approach, contrast this with problem approach
+:::
+
+## Problems, not projects
+
+::: {.incremental}
+
+- Showing proof by solving **Problems**
+- Intrinsically motivated: Unbounded problem space (a.k.a **you** need to decide the bounds)
+- Data does not already live in a CSV or database
+- Problem drives tech choices
+- "Problem in search of solution"
+- Basically... find a small real world problem and solve it
+::: 
+
+::: {.notes}
+- In contrast to projects, w/ problems, tech serves the problem
+- Read list 
+- Good thing is not only are we in golden age of democritized learning, but also lots of good content about entrpreunship
+- Preaching to choir on this, given literally standing at Roux Institute
+- Essentially saying you want to create a tiny, tiny business
+- Or, MicroSaas
+- Goal is to build it, tethering yourself to reality, with something manable
+:::
+
+# What is a MicroSaaS? 
+
+::: {.notes}
+- New term to me
+:::
+
+# What is a Micro<span style="color:red;">SaaS</span>? 
+
+::: {.notes}
+- SaaS: Software as a Service 
+- Build once, ship infinately 
+:::
+
+# What is a <span style="color:red;">Micro</span>SaaS? 
+
+::: {.notes}
+- Micro refers to two things:
+  + market you are trying to serve, a niche
+  + size of the team: single person, small team
+:::
+
+## 
+
+::: {.incremental}
+![](fig/whatismicrosaas.png)
+:::
+
+::: {.notes}
+- I like this description of it from Hackernoon I found
+- Taken from video in the post
+- Read it 
+- SaaS: has to be a service that provides real value to your niche
+- Focus here is not growth and scaling, small, constitent user base
+- Question is then: what problem can I solve?
+:::
+
+## Rob Walling's Books
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![](fig/saasplaybook.jpg)
+:::
+
+
+::: {.column width="50%"}
+![](fig/ssss.jpg)
+
+:::
+::::
+
+
+
+# Thesis in a Nutshell
+
+::: {.incremental}
+
+1. Try to build a MicroSaaS
+2. Get forced to wear more than your data scientist hat
+3. See your data science work through a novel lens 
+4. (Maybe use R to do it?)
+:::
+
+::: {.notes}
+- click through and read 
+- going to tell you what I have learned by going through this process myself
+:::
+
+## What problem can I solve? 
+
+
+![](fig/foundermarketfit.png)
+
+::: {.notes}
+- questions you want to try to solve is what problem can you solve 
+- If truly unbounded problem space, really COULD be anything
+- advice that I found quite helpful was from this Y Combinator Video 
+- Essentially, keyword in the question
+:::
+
+## Keyword: _I_
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Recent freelance fractional CFO work
+- Knowledge and network in performing arts 
+- Recently read book on how churn affects revenue in arts
+- Asked network what kinds of problems existed for real people in this space
+:::
+
+
+::: {.column width="50%"}
+
+![](fig/runbusiness.png)
+
+:::
+::::
+
+::: {.notes}
+- few months ago, where I found myself was:
+- read slides
+- Asked around for problems
+- Started asking around, and appeared there was demand for better data analytics in arts
+:::
+
+# Analyze ticketing data so performing arts organizations can understand their patron’s financial behavior
+
+::: {.notes}
+- Had technical and domain knowledge for calculations
+- Was told there is demand to better use data, but not always technical know-how
+- Data needed to make these calculations is tracked by most organizations
+:::
+
+## Truly, what are the specs of an MVP?
+
+Requirements:
+
+1. Upload historical ticket data
+2. Faster and more streamline than Excel 
+3. Output easily understood by non-technical user
+4. Maximum two months (Jan, Feb of 2025) 
+
+::: {.notes}
+- At point where needed to dust off some work (since just freelance last year)
+- Unlike taking a project where I might pick stack first, started with final use case in mind
+- Requirements:  (could I build something that)
+  + do it at a scale where people who used it excel broke
+  + have the UI be simple enough that assuming right format of data, delivers this easily?
+  + create it with non-technical users in mind. Assume they can get the data in the right format and know what numbers mean, but that's it
+  + love this charlotte wickham quote that says if you have to learn it, made software, not a dashboard
+  + return to this point when thinking about UI
+  + maximum two month bound 
+:::
+
+
+## What do **I** want out of this?
+
+::: {.incremental}
+
+- No idea if this would work or not 
+- Establish principles at start so however it goes, it's investment in self
+  + (Goal: become a better data scientist)
+:::
+  
+## Wish List
+
+::: {.incremental}
+- Improve my ability to make interactive dashboards
+  + (mostly Quarto before, never serious shiny)
+- See what all the AI LLM hype is about to assist with coding
+- Productionize what I built
+- Write code in a way that future-me (and future employers) would approve of
+::: 
+
+::: {.notes}
+- Had idea of very hyper specific persona and deliverable 
+- At start, had no idea if it was going to work or not, remember started this with expressed intention to upskill
+- Why? So if it failed, I still would benefit from this and not just write a bunch of sphatettie code that I'd feel embarassed to show
+- I wanted:
+  + to improve my ability to make interactive apps (mostly quarto before, never big shiny)
+  + see what all the AI LLM hype is about to assist with coding
+  + productionize what i built
+  + write code in a way that future me (and future employers) would know is easy to maintain
+:::
+
+
+# Developing the MVP
+
+::: {.notes}
+- At this point, have an idea
+- How to build it?
+- Can't answer that without doing a bit of a pitstop on why R
+:::
+
+## Why R? 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Open Source Programming Language
+- Suite of tools that centralize data centric development 
+  + _tidyverse_, Posit
+- **I** can work very quickly in it
+:::
+
+::: {.column width="40%"}
+![](fig/R.png)
+:::
+
+::::
+
+::: {.notes}
+- Assume most people here have heard of R
+- Open source programming language
+- If Python is second best for everything, R is the best for data in my opinion
+- Quite popular with academics (reason I learned it), but lots of other benefits I can show off
+- Most importantly for this project, **I** can work very quickly in it
+:::
+
+# Tidyverse Crash Course
+
+## Import and Assignment
+
+```{r}
+#| label: syntax-import
+#| warning: false
+#| echo: true
+#| code-line-numbers: "1-5|8"
+
+library(readr)
+library(janitor)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+
+
+superstore_orders <- read_csv("data/superstore_orders.csv")
+
+```
+
+## Superstore Orders
+
+```{r}
+#| echo: false
+
+superstore_orders |>
+  select(Category, City,`Country/Region`,`Customer ID`,`Customer Name`, `Order Date`, `Order ID`) |>
+  head(15) |>
+  kable() |>
+  kable_styling(full_width = FALSE, font_size = 20)
+```
+
+
+## The Pipe:   |>
+
+:::{.incremental}
+- Pipe read as "and then" 
+- Start with the table called `superstore_orders`
+- And then
+- Use the function `clean_names()` on it
+- `f(x)` becomes `x |> f()`
+:::
+
+```{r}
+#| label: syntax-pipe
+#| warning: false
+#| echo: true
+#| output: false
+#| code-line-numbers: "1-6|3|5|6"
+
+superstore_orders <- read_csv("data/superstore_orders.csv")
+
+clean_names(superstore_orders)
+
+superstore_orders |>
+  clean_names()
+
+```
+
+
+
+## Cleaner Names
+
+```{r}
+superstore_orders |>
+  clean_names() |>
+  select(category:order_id) |>
+  head(15) |>
+  kable() |>
+  kable_styling(full_width = FALSE, font_size = 20)
+```
+
+## Select and Filter
+
+```{r}
+#| label: syntax-saf
+#| warning: false
+#| echo: true
+#| code-line-numbers: "1-6|5|6"
+
+superstore_orders <- read_csv("data/superstore_orders.csv")
+
+cleaned_data <- superstore_orders |>
+  clean_names() |>
+  select(category, region, quantity) |>
+  filter(region != "South") 
+
+```
+
+## Column and Rows Logic
+
+```{r}
+#| echo: false
+cleaned_data |>
+  head(15) |>
+  kable() |>
+  kable_styling(full_width = FALSE, font_size = 20)
+```
+
+## Group By and Summarise
+
+```{r}
+#| label: syntax-gbs
+#| warning: false
+#| echo: true
+#| code-line-numbers: "1-6|5|6"
+
+cleaned_data <- superstore_orders |>
+  clean_names() |>
+  select(category, region, quantity) |>
+  filter(region != "South") |>
+  group_by(category, region) |>
+  summarise(total_quantity = sum(quantity)) 
+```
+
+## Summary Table
+
+```{r}
+cleaned_data |>
+  head(15) |>
+  kable() |>
+  kable_styling(full_width = FALSE, font_size = 20)
+```
+
+## Plot It 
+
+```{r}
+#| label: syntax-plot
+#| warning: false
+#| echo: true
+#| code-line-numbers: "1-10|1|2|3|4|5-9|10|1-10"
+
+my_plot <- cleaned_data |>
+  ggplot(aes(x = category, y = total_quantity, fill = region)) +
+  geom_bar(stat = "identity") + 
+  coord_flip() + 
+  labs(title = "A Simple Bar Plot", 
+       subtitle = "Southen Region Excluded",
+       x = "Category", 
+       y = "Total Quantity", 
+       fill = "Region") +
+  theme_classic()
+
+```
+
+## Final Plot
+
+```{r}
+my_plot
+```
+
+
+## Posit Tools
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Quarto
+  + Static and Parameterized Reports
+- Shiny
+  - Interactive Dashboards
+- Shiny Assistant 
+  - LLM for Shiny
+:::
+
+::: {.column width="40%"}
+![](data/posit.jpg)
+![](vid/shiny.jpeg)
+:::
+
+::::
+
+::: {.notes}
+- Further, not just tidyverse, but really whole suite of tools
+- Quarto: for making documents (this whole slide deck is just flat text file), keyboard shortcuts
+- Shiny: Rapid dashboards
+- Shiny Assitant: LLM
+- Not about to start flame war
+- but to have all these tools live in the same ecosystem, huge headache save IMO
+- Why? allows you to complete the circle the whole time? 
+- what do i mean by this? 
+:::
+
+## Production during the process
+
+:::{.incremental}
+- Spend minimal time on MVP
+- Faster in someone's hands, the better
+- Write in environment where it's easy to deploy
+- Keep **production** in mind
+:::
+
+
+::: {.notes}
+- with Posit ecosystem, paths to production built right in
+- Production: take example from book, just means used by someone
+- Why important that it's working from start? 
+- BC means you can put it infront of customers almost immediate 
+:::
+
+## Production for Users and Developers
+
+:::: {.columns}
+
+::: {.column width="60%"}
+:::{.incremental}
+- It is used, even if only by one person.
+- It is relied upon by its user(s).
+- It has real life impact if something goes wrong.
+:::
+
+:::
+
+::: {.column width="40%"}
+![](fig/prodbook.png)
+:::
+::::
+
+::: {.notes}
+- with Posit ecosystem, paths to production built right in
+- Production: take example from book, just means used by someone
+- Why important that it's working from start? 
+- BC means you can put it infront of customers almost immediate 
+:::
+
+## Getting Buy-In, AKA Living in Reality
+:::: {.columns}
+
+::: {.column width="70%"}
+:::{.incremental}
+- Goal during development: get buy in
+- Do this fast
+- Age of LLMs, use this to your advantage
+:::
+
+:::
+
+::: {.column width="30%"}
+![](fig/mom_test_book.jpg)
+:::
+::::
+
+
+::: {.notes}
+- what showed there was just toy app
+- first iteration of this was even less functional 
+- remember, trying to solve real problem here 
+- want to get buy in and interst as fast as possible
+- important idea from MOM test book is only way you know you are getting closer is if have skin in game
+- how do you do that if you're literlly starting with nothing?
+- get to the no as fast as possible, if not, keep forward
+- First thing was to convice people that was building real product, and if demand there, could shape it
+- so used LLM to just sketch out the wireframe
+- put it into Assitant, made screen recording of video, posted it, saw who bit
+- show LLM tech
+- show video, mp, not mvp bc doesn't do anything 
+:::
+
+# Move fast using LLMs
+
+## {background-image="vid/shiny1.gif"}
+
+## Getting buy-in from small orgs, on right track?
+
+:::: {.columns}
+
+::: {.column width="70%"}
+:::{.incremental}
+- Posted video of 45 minutes playing with Shiny Assitant
+- Group of Arts Admin people
+- Looking for data trade, insights for data
+- Got 10 years of data from Orlando Family Stage
+:::
+
+:::
+
+::: {.column width="30%"}
+![](vid/ofs.jpg)
+:::
+::::
+
+
+
+::: {.notes}
+- posted it in group for arts admin people
+- had both symphony orchestra and small theatre company reach out
+- said they can have whatever insights from their analysis for free in exhange for data
+- got NDA off legal zoom
+- Now we're tehtered to reality
+- not only have real data, but real person at real organization with real problems
+- question is now not what would this person pay, not trying to extort
+- but what is the line between making something useful enough to them, but also genralizable
+- What features do you build? 
+- This is where the critical thinking comes in 
+- prepare to be told what you think is not useful
+:::
+
+## {background-image="vid/mvp1.gif"}
+
+## Iteration Alpha
+
+::: {.incremental}
+- Two weeks of development
+  + (refreshing Shiny knowledge)
+- Feedback
+  + Made worse version of their CRM
+  + Want analysis 
+  + Want things they couldn't do with basic tools
+  
+::: 
+
+::: {.notes}
+- First version of app was told that I basically was making a worse version of their ticketing CRM
+- Was aware this would happen from books I read, but that almost made it worse
+- But listened to what they said, said that what people want but don't know how to do is more expert analysis
+- this is of course tall order, but flip side is that if you can even make a dent in it, you are solving a real problem 
+- Won't go through every iteration, jump forward in time now 
+:::
+
+# Bolero 
+
+## {background-image="vid/bolero_gif.gif"}
+
+::: {.notes}
+- After a few weeks, ended up with this here
+- Few features proud of:
+- takes about 600,000 rows, enough to make Excel cry
+- incorporated feedback that people want their historical data to contextualize common KPIs (something their CRMs are not good at)
+- And has handy export feature: allows user to select show that they want to target, export CSV of all customers who have not purchased a ticket along with common metrics related to their puchasing behavior
+- Happy to boot it up after, apologise for low resolution on gif
+:::
+
+
+# Take Aways
+
+::: {.notes}
+- This was whirlwind of project I've been working on last few months
+- Been a bit eclectic and messy, and tried to do that justice in the presentation
+- Cleaning it up, what are the key aha moments
+- All experiences here that will also make you a better data scientist
+:::
+
+## MicroSaaS allows you to own the entire process
+
+::: {.incremental}
+- Pro: Forces you to consider the "so what" from Day 1
+- Con: Context switching is difficult
+- Pro: Wearing your "product" hat changes how you see your development
+- Con: Generate a lot of technical debt if you commit to moving fast
+- Pro: Live in an time with freak-level tooling and access to learning
+:::
+
+::: {.notes}
+- read list 
+:::
+
+## Tether yourself to reality
+
+::: {.incremental}
+- Long road from problem to payment
+- Set self up for success by:
+  + How can I work in way that even if it fails, I win?
+  + Getting your ideas in front fast
+- Real people's real problems
+- Skin-in-Game milestones for success
+  + Introductions
+  + Trading of resources
+  + Money
+:::
+
+::: {.notes}
+- read list
+:::
+
+## Practice kindness to future you 
+
+::: {.incremental}
+- Develop with "what if this does work?" mindset
+- Finding balance between moving fast and being kind to future you
+- Code is meant to be read by people 
+  + (e.g. you, future colleagues)
+::: 
+
+::: {.notes}
+- did project to get out of writing code that dev friends joke aobut me with
+- one off analyses
+- find way to inject longer term thinking in development
+- CLICK
+:::
+
+# Next Steps 
+
+::: {.notes}
+- what is next?
+:::
+
+## Launch 
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- WeInc. Marketing hosts launch in Spring
+- Potential for small revenue
+- Continued learning
+  + Data engineering
+  + Sales
+  + Delegating
+:::
+
+::: {.column width="60%"}
+![](fig/weinc.jpg)
+:::
+
+::::
+
+::: {.notes}
+- have a marketing agency in CA that is very interested in the tool
+- One of key people during development
+- Launch it, have nice side project to keep it going
+- Over the moon if I even had one customer using this 
+- Really opportunity to keep learning, esp being relatively new to data world
+:::
+
+## Open to Work!
+
+- Spent last year freelancing
+- Currently looking for **full time** or **long contract work**
+- Would love to talk to anyone hiring **data scientists** 
+
+::: {.notes}
+- Said before, spent last year doing one off freelance during time of major transition
+- So looking for FT work, anyone hiring and would like to work with me, love to work for a Maine company
+- More than happy to tell you about other skills I have as well 
+:::
+
+## Get In Touch 
+
+<section style="text-align: left; margin: 100px 0 0 0">
+
+davidjohnbaker1@gmail.com
+
+https://www.linkedin.com/in/david-john-baker-phd/
+
+@davidjohnbaker.bsky.social
+
+</section>
+
+
+##  Abstract 
+
+Building a MicroSaaS forces data scientists to think beyond analysis and requires developing skills in software engineering, writing code that can be used in production, and encourages higher level business thinking. 
+In this talk, I’ll demonstrate how tools from the R (mostly Posit!) ecosystem– like R Shiny– can be used to develop a minimum viable product using a ticket sales analysis application. 
+I highlight how this process not only improves technical skills, but also enables rapid development of business objectives. 
